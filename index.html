@@ -7,99 +7,37 @@
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
     <title>TodoList</title>
 </head>
 <body>
+    <div id="input_task">
+        <input type="text" placeholder="Введите название задачи" autofocus>  
+        <button class="task-button" id='send_task' onclick="sendTask()"><i class="fas fa-check"></i></button>
+        <button class="task-button" id='close_task' onclick="closeTask()"><i class="fas fa-times"></i></button>
+    </div>
     <div class="container">
         <div id="todoList">
-            <div id="task-item-1" class="task">Kfkfkfkfk 
+            <div id="task-item-1" class="task">Выпить кофе
                 
                 <span class="task-buttons">
-                    <button class="task-button"><i class="fas fa-pen"></i></button>
-                    <button class="task-button"><i class="fas fa-trash"></i></button>   
+                    <button class="task-button"  onclick="editTask()"><i class="fas fa-pen"></i></button>
+                    <button class="task-button" onclick="removeTask(this.id)"><i class="fas fa-trash"></i></button>   
 
             </span>
              
         </div>
 
-        <div id="task-item-1" class="task">Kfkfkfkfk 
-                
-            <span class="task-buttons">
-                <button class="task-button"><i class="fas fa-pen"></i></button>
-                <button class="task-button"><i class="fas fa-trash"></i></button>   
-
-        </span>
-         
-    </div>
+      
 
 
-    <div id="task-item-1" class="task">Kfkfkfkfk 
-                
-        <span class="task-buttons">
-            <button class="task-button"><i class="fas fa-pen"></i></button>
-            <button class="task-button"><i class="fas fa-trash"></i></button>   
 
-    </span>
-     
-</div>
-
-
-<div id="task-item-1" class="task">Kfkfkfkfk 
-                
-    <span class="task-buttons">
-        <button class="task-button"><i class="fas fa-pen"></i></button>
-        <button class="task-button"><i class="fas fa-trash"></i></button>   
-
-</span>
- 
-</div>
-
-
-<div id="task-item-1" class="task">Kfkfkfkfk 
-                
-    <span class="task-buttons">
-        <button class="task-button"><i class="fas fa-pen"></i></button>
-        <button class="task-button"><i class="fas fa-trash"></i></button>   
-
-</span>
- 
-</div>
-
-<div id="task-item-1" class="task">Kfkfkfkfk 
-                
-    <span class="task-buttons">
-        <button class="task-button"><i class="fas fa-pen"></i></button>
-        <button class="task-button"><i class="fas fa-trash"></i></button>   
-
-</span>
- 
-</div>
-
-
-<div id="task-item-1" class="task">Kfkfkfkfk 
-                
-    <span class="task-buttons">
-        <button class="task-button"><i class="fas fa-pen"></i></button>
-        <button class="task-button"><i class="fas fa-trash"></i></button>   
-
-</span>
- 
-</div>
-
-
-<div id="task-item-1" class="task">Kfkfkfkfk 
-                
-    <span class="task-buttons">
-        <button class="task-button"><i class="fas fa-pen"></i></button>
-        <button class="task-button"><i class="fas fa-trash"></i></button>   
-
-</span>
- 
-</div>
         
 
         </div>
         <button id="addTask" onclick="addTask()">Добавить задачу</button>
     </div>
+
+    
 </body>
 </html>
