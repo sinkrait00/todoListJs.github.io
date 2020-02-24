@@ -12,12 +12,14 @@
 </head>
 <body>
     <div id="input_task">
+        <div class="errorPlace"></div>
         <input type="text" placeholder="Введите название задачи" autofocus>  
         <button class="task-button" id='send_task' onclick="sendAddTask()"><i class="fas fa-check"></i></button>
         <button class="task-button" id='input_close_task' onclick="closeTask(this.id)"><i class="fas fa-times"></i></button>
     </div>
  
     <div id="edit_task">
+        <div class="errorPlace"></div>
         <input type="text" placeholder="Введите название задачи" autofocus>  
         <button class="task-button" id='send_task' onclick="sendEditTask()"><i class="fas fa-check"></i></button>
         <button class="task-button" id='edit_close_task' onclick="closeTask(this.id)"><i class="fas fa-times"></i></button>

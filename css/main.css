@@ -83,7 +83,14 @@ body{
     background: #EADCDC;
     padding: 10px;
 }
-
+.errorPlace{
+    color: rgb(255,42,59);
+    margin: 15px 0;
+   
+    position: absolute;
+    left: 38%;
+    top: 43%;
+}
 
 #input_task,
 #edit_task{
