@@ -3,7 +3,12 @@ html{
     padding: 0;
 }
 
-
+a:active, a:focus,
+input, textarea,
+input:active, textarea:active,
+button, button:active
+{ outline: none; }
+:focus {outline:none;}
 body{
     font-family: 'Montserrat', sans-serif;
     background: url(../img/bg.jpg) no-repeat center center fixed;
