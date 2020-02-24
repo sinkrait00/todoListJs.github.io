@@ -1,5 +1,6 @@
-var AMOUNT_TASKS =1;
-var lastChangedName;
+let AMOUNT_TASKS =1;
+let lastChangedName;
+
 
 const addTask = ()=>{
     let adder = document.getElementById('input_task');
