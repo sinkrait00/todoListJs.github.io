@@ -16,12 +16,13 @@
         <button class="task-button" id='send_task' onclick="sendTask()"><i class="fas fa-check"></i></button>
         <button class="task-button" id='close_task' onclick="closeTask()"><i class="fas fa-times"></i></button>
     </div>
+ 
     <div class="container">
         <div id="todoList">
-            <div id="task-item-1" class="task">Выпить кофе
+            <div id="task-item-01" class="task">Выпить кофе
                 
                 <span class="task-buttons">
-                    <button class="task-button"  onclick="editTask()"><i class="fas fa-pen"></i></button>
+                    <button class="task-button"  onclick="editTask(this.id)"><i class="fas fa-pen"></i></button>
                     <button class="task-button" onclick="removeTask(this.id)"><i class="fas fa-trash"></i></button>   
 
             </span>
